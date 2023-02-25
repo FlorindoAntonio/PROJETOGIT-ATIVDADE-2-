@@ -1,0 +1,27 @@
+name: Florindo
+
+on:
+ push:
+     branches: ["main"]
+     
+ jobs:
+        CI:
+            runs-on: ubunto-lastest
+            
+            steps:
+             - uses: actions/checkout@v3.3.0
+             -name:
+              uses:
+              with:
+                 context: ./src
+                   file:  ./src/Dockerfile
+                    push: true 
+                    tags:
+                       FlorindoAntonio/PROJETOGIT-ATIVDADE-2:V1
+                       FlorindoAntonio/PROJETOGIT-ATIVDADE-2:lastest
+                       
+             
+               
+               
+     
+     
